@@ -1,0 +1,408 @@
+@import url(../css/sanitize.css);
+
+
+body{
+    /* 横スクロールを消す */
+    overflow-x: hidden; 
+}
+
+header {
+    /* ヘッダー */
+    z-index: 9999;
+    width: 100%; /* 幅指定 */
+    height: 50px; /* 高さ指定 */
+    background: #717070; /* 背景色 */
+    padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置 */
+    left: 0; /* 左右の固定位置 */
+    display: flex; /* 中の要素を横並び */
+    align-items: center; /* 中の要素を上下中央 */
+   
+}
+
+header .header_nav .header_menu {
+    display: flex; /* 中の要素を横並びにする */
+}
+
+header .header_nav .header_menu li {
+    list-style: none; /* リストの[・]を消す */
+}
+header .header_nav .header_menu li {
+    width:auto;
+   font-size: 20px; /* リストの文字 */
+   color: black;
+   font-weight: bold;
+}
+header .header_nav .header_menu li + li {
+    
+    margin-left: 110px; /* メニューそれぞれに間隔をあけるため */
+}
+
+/* ヘッダー文字 */
+header .header_nav .header_menu a {
+	color: #090909;
+}
+header .header_nav .header_menu a:hover {
+	color: #d43991
+}
+
+main {
+    height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+}
+header h1{
+
+    font-size: 30px;
+    margin: 0;
+    padding-right: 5rem;
+   
+}
+
+
+
+.start {
+    display: block;
+    background-image: url(../picture/first_pic/first_back.jpg);
+    
+        background-color: rgba(255, 255, 255, 0.5);
+        background-blend-mode: lighten;
+        background-attachment: fixed;
+        max-width: 100%;
+        padding-bottom: auto;
+        margin: 0 auto;
+}
+
+
+.start .start_word{
+    margin-bottom: 0;
+}
+
+.start .start_word h1{
+    font-family:"HG正楷書体-PRO";
+    font-style: oblique;
+    
+    font-size: 120px;
+    font-weight: 300;
+    
+    width: 100%; 
+    text-align:center;
+    padding-top: 10%;
+    margin: 0;
+    position: relative;
+    top: 60px;
+}
+
+.start .start_word p{
+font-family:"HG正楷書体-PRO";
+font-size: 30px;
+text-align: right;
+position: relative;
+top: 40px;
+padding:0;   
+line-height: 0.5em;
+margin-right: 20px;
+}
+
+
+/* 最初 */
+
+.first {
+    display: block;
+    background-image: url(../picture/first_pic/first_back.jpg);
+    
+        background-color: rgba(255, 255, 255, 0.5);
+        background-blend-mode: lighten;
+        background-attachment: fixed;
+        max-width: 100%;
+        padding-bottom: 5rem;
+        margin: 0 auto;
+
+}
+
+
+.first .first_text{
+    text-align: center;
+}
+
+.first .first_text h1{
+font-size: 70px;
+font-family: "游明朝";
+position: relative;
+top: 60px;
+display: inline-block;
+padding: 55px;
+margin-top: 80px;
+}
+
+.first .first_text h1:before,
+.first .first_text h1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 45px;
+    height: 1px;
+    background-color: black;
+}
+
+.first .first_text h1:before {
+    left:0;
+}
+.first .first_text h1:after {
+    right: 0;
+}
+
+.first .first_text p{
+    font-size: 40px;
+    line-height: 1.5em;
+}
+
+
+
+
+
+/* 歴史 */
+
+.history{
+display: block;
+background-image:url(../picture/history_pic/history_back.jpg);
+background-color: rgba(255,255,255,0.5);
+background-blend-mode: lighten;
+background-attachment: fixed;
+max-width: 100%;
+margin: 0 auto;
+padding-bottom: auto;
+}
+
+.history .history_opening{
+    text-align: center;
+}
+
+.history .history_opening h1 {
+    font-size: 70px;
+    font-family: "游明朝";
+    padding: 55px;
+
+}
+
+.history .history_opening p{
+    font-size: 30px;
+    line-height: 1.5em;
+    margin-top: 0;
+}
+
+
+
+
+.history .timeline {
+position: relative;
+margin-bottom: 0%;
+padding-bottom: 2em;
+margin: 0;
+}
+
+.history .timeline:before {
+position: absolute;
+left: 13.15em;
+top: 0px;
+width: 2px;
+height: 100%;
+content: '';
+background: #000000;
+margin: 0;
+}
+
+.history .timeline .timeline_item {
+	margin: 0px 0px 0px 80px;
+}
+
+.history .timeline .timeline_item .year_date .history_year {
+	font-family: serif;
+	font-size: 6em;
+	font-weight: bold;
+	position: relative;
+    left: 1em;
+	margin: 0;
+	letter-spacing: 3px;
+	color: rgba(100, 79, 207, 0.14);
+}
+
+
+.history .timeline .timeline_item .year_date .year_title {
+position: absolute;
+font-family: "メイリオ";
+left: 8em;
+font-size: 2em;
+font-weight: bold;
+margin: 0;
+margin-top: -60px;
+color: #000000;
+}
+
+.history .timeline .timeline_item .year_date .year_title:before {
+position: absolute;
+top: 40%;
+left: -1.5em;
+width: 8px;
+height: 8px;
+content: '';
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+border: 3px solid #000000;
+background: #fff;
+}
+
+
+.history .timeline .timeline_item .year_inside {
+position: relative; 
+left :10em;
+font-size: 1.5em;
+font-family: "メイリオ";
+font-feature-settings: 2rem;
+
+
+line-height:1.5;
+margin-top: 10px;
+padding-left: 1em;
+border-left: 3px solid #000000;
+}
+
+
+.history .timeline .future p{ 
+position: relative;
+text-align: center;
+font-size: 3em;	
+}
+
+
+
+
+/* ポートフォリオ */
+
+.portfolio{
+    background-image: url(../picture/background_pic/black.jpg);
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: auto;
+    padding-top: 5em;
+    vertical-align: bottom;
+}
+
+.portfolio .portfolio_opening h1{
+    font-size: 70px;
+    font-family: "游明朝";
+    text-align: center;
+
+}
+
+
+/* /////////////////// */
+
+.portfolio .portfolio_container {
+	padding: 5rem;
+}
+
+.portfolio .portfolio_container .slider-box {
+	position: relative;
+	max-width: 50rem;  /*画像表示サイズ*/
+	margin: 0 auto;
+}
+
+.portfolio .portfolio_container .slider-box .slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+    
+	box-shadow: 0 1rem 2rem 1.2rem hsla(0, 2%, 10%, 0.977);
+	border-radius: 0.5rem;
+    -ms-overflow-style: none; /* スクロールバーを隠す Edge */
+	scrollbar-width: none; /* スクロールバーを隠す Firefox */
+}
+
+/* スクロールバーを隠す Chrome, Safari Opera */
+.portfolio .portfolio_container .slider-box .slider::-webkit-scrollbar {
+	display: none;
+}
+
+
+.portfolio .portfolio_container .slider-box .slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.portfolio .portfolio_container .slider-box .slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.portfolio .portfolio_container .slider-box .slider-nav a {
+    position: relative;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: #f3f2f0;
+	
+	transition: opacity ease 250ms;
+}
+
+.portfolio .portfolio_container .slider-box .slider-nav a:hover {
+	opacity: 10%;
+
+}
+
+
+
+/* 連絡先 */
+
+.contact{
+    background-image: url(../picture/background_pic/black.jpg) ;
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    padding: 5rem;
+    max-width: 100%;
+    vertical-align: bottom;
+    
+}
+
+.contact .contact_opening h1{
+    font-size: 70px;
+    font-family: "游明朝";
+    text-align: center;
+    padding-bottom: 2rem;
+    margin: 0;
+}
+
+.contact address {
+    font-size: 2rem;
+    color: #090909;
+    text-align: center;
+}
+
+.contact .contact_opening address a{
+    color: #090909;
+}
+
+.contact .contact_opening address a:visited{
+    color:#090909;
+
+}
+
+
+.contact .contact_opening address a:hover{
+    color: #d43991;
+
+}
